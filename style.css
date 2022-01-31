@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900 & display: swap');
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Buat Navbar */
+.navbar{
+	height: 100px;
+	background: transparent;
+	font-size: 16px;
+	z-index: 1000;
+}
+
+nav.sticky{
+	padding: 20px 40px;
+	background: #fff;
+	z-index: 1000;
+	transition: .6s;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+.navbar ul{
+	padding: 1em 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.navbar li a{
+	position: relative;
+	text-decoration: none;
+	transition: all ease-in-out 250ms;
+}
+.navbar li a::after{
+	content: ' ';
+	position: absolute;
+	display: block;
+	height: 0.2em;
+	width: 0%;
+	background-color: black;
+	transition: all ease-in-out 250ms;
+}
+
+.navbar li a:hover::after{
+	width: 85%;
+}
+.navbar li:first-child{
+	margin-right: auto;
+	margin-left: 3em;
+}
+
+.navbar-brand img {
+	width: 150px;
+	height: auto;
+	margin-left: 0;
+}
+
+
+@keyframes show {
+	0%{
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+/* Buat Caption */
+
+.home{
+	margin-top: 5%;
+}
+.kepsen .ready{
+	margin-top: 25%;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.kepsen .nikmati{
+	font-size: 15px;
+}
+
+.img img{
+	width: 600px;
+	height: 600px;
+}
+
+a.btn{
+	top: 0;
+	left: 0;
+	padding: 12px 30px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FCE38A;
+	border-radius: 30px;
+	transition: 0.3s linear;
+	cursor: pointer;
+	position: relative;
+	font-weight: 600;
+}
+a.btn:hover{
+	color: #000;
+	background: #FCCE2B;
+}
+
+/* End of Home */
+
+
+/* Buat Service */
+
+.service{
+	width: 80%;
+	height: 400px;
+	margin: auto;
+}
+
+.h_service{
+	font-size: 26px;
+	font-weight: 600;
+	margin-top: 5%;
+}
+
+.servie_row{
+	justify-content: space-between;
+}
+
+.service_col{
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 4%;
+	padding-top: 17px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+.service_col h3{
+	text-align: center;
+	top: 0;
+	font-weight: 600;
+	font-size: 23px;
+}
+
+.service_col p{
+	text-align: center;
+	font-size: 15px;
+}
+
+.service_col img{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	color: #FCD448;
+	width: 100px;
+	height: 100px;
+}
+
+.service_col .gambar_col{
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.service_col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+	z-index: 10;
+	cursor: pointer;
+}
+
+/* End of Service */
+
+/* Untuk Take Away */
+
+.best{
+	height: 600px;
+	margin: auto;
+}
+
+.best_row{
+	justify-content: space-between;
+}
+
+.img_col img{
+	width: 550px;
+	height: 550px;
+}
+
+.best_col .take_away{
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #FCCE2B;
+}
+
+.best_col .simple{
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+.best_col .gunakan{
+	line-height: 35px;
+}
+
+a.btn_grab{
+	top: 15px;
+	left: 0;
+	padding: 12px 30px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FCE38A;
+	border-radius: 30px;
+	transition: 0.3s linear;
+	cursor: pointer;
+	position: relative;
+	font-weight: 600;
+}
+a.btn_grab:hover{
+	color: #000;
+	background: #FCCE2B;
+}
+
+a.btn_shopee{
+	top: 15px;
+	left: 0;
+	padding: 12px 30px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FCE38A;
+	border-radius: 30px;
+	transition: 0.3s linear;
+	cursor: pointer;
+	position: relative;
+	font-weight: 600;
+}
+a.btn_shopee:hover{
+	color: #000;
+	background: #FCCE2B;
+}
+
+/* End of Take Away */
+
+
+/* Easy Tips */
+
+.how{
+	top: 10%;
+	height: 450px;
+	margin: auto;
+}
+
+.how_col .work{
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #FCCE2B;
+}
+
+.how_col .tips{
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.how_col .tips_2{
+	line-height: 35px;
+}
+
+a.btn_how{
+	top: 15px;
+	left: 0;
+	padding: 12px 30px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FCE38A;
+	border-radius: 30px;
+	transition: 0.3s linear;
+	cursor: pointer;
+	position: relative;
+	font-weight: 600;
+}
+a.btn_how:hover{
+	color: #000;
+	background: #FCCE2B;
+}
+
+.options {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   overflow: hidden;
+   min-width: 600px;
+   max-width: 900px;
+   width: calc(100% - 100px);
+   height: 400px;
+}
+.option {
+   position: relative;
+   overflow: hidden;
+   min-width: 60px;
+   margin: 10px;
+   background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+   background-size: auto 120%;
+   background-position: center;
+   cursor: pointer;
+   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.option:nth-child(1) {
+   --defaultBackground: #ed5565;
+}
+.option:nth-child(2) {
+   --defaultBackground: #fc6e51;
+}
+.option:nth-child(3) {
+   --defaultBackground: #ffce54;
+}
+.option:nth-child(4) {
+   --defaultBackground: #2ecc71;
+}
+.option:nth-child(5) {
+   --defaultBackground: #5d9cec;
+}
+.option.active {
+   flex-grow: 10000;
+   transform: scale(1);
+   max-width: 600px;
+   margin: 0px;
+   border-radius: 40px;
+   background-size: auto 100%;
+}
+.option.active .shadow {
+   box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+.option.active .label {
+   bottom: 20px;
+   left: 20px;
+}
+.option.active .info > div {
+   left: 0px;
+   opacity: 1;
+}
+.option:not(.active) {
+   flex-grow: 1;
+   border-radius: 30px;
+}
+.option:not(.active) .shadow {
+   bottom: -40px;
+   box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
+}
+.option:not(.active) .label {
+   bottom: 10px;
+   left: 10px;
+}
+.option:not(.active) .info > div {
+   left: 20px;
+   opacity: 0;
+}
+.shadow {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   height: 120px;
+   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.label {
+   display: flex;
+   position: absolute;
+   right: 0px;
+   height: 40px;
+   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.icon {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   min-width: 40px;
+   max-width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   background-color: white;
+   color: var(--defaultBackground);
+}
+.info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 10px;
+   color: white;
+   white-space: pre;
+}
+.info > div {
+   position: relative;
+   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.main {
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+.sub {
+   transition-delay: 0.1s;
+}
+
+/* End of Easy Tips */
+
+/* Floating WA */
+
+.floating-wpp {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 14px;
+    transition: bottom 0.2s;
+    z-index: 1000;
+}
+
+.floating-wpp .floating-wpp-button {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.floating-wpp .floating-wpp-button img,
+.floating-wpp .floating-wpp-button svg {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 50%;
+}
+
+.floating-wpp:hover {
+    bottom: 17px;
+}
+
+.floating-wpp:hover .floating-wpp-button {
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.4);
+}
+
+.floating-wpp .floating-wpp-popup {
+    /*border: 2px solid white;*/
+    border-radius: 6px;
+    background-color: #E5DDD5;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.25);
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom 0.1s ease-out, opacity 0.2s ease-out;
+    transform-origin: bottom;
+}
+
+.floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px 12px;
+    width: 260px;
+    height: auto;
+    bottom: 82px;
+    opacity: 1;
+}
+
+.floating-wpp .floating-wpp-popup .floating-wpp-message {
+    background-color: white;
+    padding: 8px;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.floating-wpp .floating-wpp-popup.active .floating-wpp-message {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.floating-wpp .floating-wpp-popup .floating-wpp-head {
+    text-align: right;
+    color: white;
+    margin: 0 -15px 10px -15px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.floating-wpp .floating-wpp-input-message {
+    background-color: white;
+    margin: 10px -15px -15px -15px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.floating-wpp .floating-wpp-input-message textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+}
+
+.floating-wpp .floating-wpp-btn-send {
+    margin-left: 12px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+/* End of Floating WPP */
+
+/* Contact */
+
+.contact{
+	padding: 30px;
+}
+
+.contact .about,
+.contact .simple_link,
+.contact .ctc{
+	font-weight: 600;
+	color: #FCD448;
+}
+
+.contact .simple_link_col{
+	padding: 0 50px;
+}
+
+.contact .ctc_col{
+	padding: 0 80px;
+}
+
+.contact  a{
+	color: #000;
+	text-decoration: none;
+}
+.contact  a:hover{
+	font-weight: 700;
+}
+
+
+
+/* End of Contact */
+
+
+/* Footer */
+
+.footer{
+	height: 30px;
+	background: #F5F5F5;
+}
+
+/* End of Footer */
+
+/* `sm` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+	/*home*/
+	.home{
+		margin-top: 20%;
+	}
+	.kepsen .ready{
+		margin-top: 5%;
+		font-size: 35px;
+	}
+	.img img{
+		width: 470px;
+		height: 470px;
+		position: relative;
+		align-items: center;
+		margin-left: -17px;
+	}
+
+	/*service*/
+	.service{
+		display: block;
+	}
+
+	/*take away*/
+	.best{
+		margin-top: 130%;
+	}
+	.img_col img{
+		width: 430px;
+		height: 430px;
+		position: relative;
+		margin-left: 0;
+	}
+
+	/*tips*/
+	.how{
+		margin-top: 75%;
+	}
+
+	.how_col .tips{
+		font-size: 35px;
+	}
+
+	.options{
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		overflow: hidden;
+		min-width: 440px;
+		max-width: 460px;
+		width: calc(100% - 100px);
+		height: 300px;
+		width: 200px;
+		margin-top: 10%;
+	}
+	.info .main{
+		font-size: 15px;
+	}
+	.info .sub{
+		font-size: 12px;
+	}
+
+	/*contact*/
+	.contact{
+		margin-top: 80%;
+		padding: 30px;
+		text-align: center;
+	}
+
+	.contact .about,
+	.contact .simple_link,
+	.contact .ctc{
+		font-weight: 600;
+		color: #FCD448;
+	}
+
+	.contact.about_col,
+	.contact .simple_link_col,
+	.contact .ctc_col{
+		padding: 0;
+	}
+
+	.contact  a{
+		color: #000;
+		text-decoration: none;
+	}
+	.contact  a:hover{
+		font-weight: 700;
+	}
+
+	/*service*/
+	.footer{
+		margin-top: 0;
+	}
+}
