@@ -919,3 +919,154 @@ a.btn_how:hover{
 		font-size: 12px
 	}
 }
+
+@media only screen and (max-width: 576px){
+	*{
+		box-sizing: border-box;
+	}
+
+	/*home*/
+	.home{
+		top: 0;
+		left: 0;
+	}
+	.kepsen .nikmati{
+		font-size: 15px;
+	}
+	.kepsen .ready{
+		margin-top: 20%;
+		font-size: 40px;
+	}
+
+	.img img{
+		margin-top: 5%;
+		margin-left: 10%;
+		width: 430px;
+		height: 430px;
+	}
+
+	/*service*/
+	.service{
+		display: block;
+	}
+
+	.service .h_service{
+		text-align: center;
+		font-size: 26px;
+	}
+
+	.service_col h3{
+		font-size: 23px;
+	}
+
+	.service_col p{
+		font-size: 15px;
+	}
+
+	/*take away*/
+	.best{
+		margin-top: 110%;
+	}
+	.img_col img{
+		width: 430px;
+		height: 450px;
+		margin-left: 8%;
+	}
+
+	.best_col .take_away{
+		font-size: 35px;
+	}
+
+	.best_col .simple{
+		font-size: 40px;
+		letter-spacing: 2px;
+	}
+
+	.best_col .gunakan{
+		line-height: 35px;
+	}
+
+	.best_col a.btn_grab{
+		display: flex;
+		text-align: center;
+	}
+
+	.best_col a.btn_shopee{
+		display: flex;
+		margin-top: 20px;
+	}
+
+	/*tips*/
+	.how{
+		margin-top: 80%;
+	}
+
+	.how_col .work{
+		font-size: 30px;
+	}
+
+	.how_col .tips{
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+
+	.how_col .tips_2{
+		line-height: 25px;
+	}
+
+	.how_col a.btn_how{
+		display: flex;
+	}
+
+	.how_col a{
+		text-align: center;
+	}
+
+	.options{
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		overflow: hidden;
+		min-width: 510px;
+		max-width: 530px;
+		width: calc(100% - 100px);
+		height: 400px;
+		width: 400px;
+		margin-top: 10%;
+	}
+	.info .main{
+		font-size: 15px;
+	}
+	.info .sub{
+		font-size: 12px;
+	}
+
+	/*contact*/
+	.contact{
+		margin-top: 60%;
+		padding: 30px;
+		text-align: center;
+	}
+
+	.contact .about,
+	.contact .simple_link,
+	.contact .ctc{
+		font-weight: 600;
+		color: #FCD448;
+	}
+
+	.contact  a{
+		color: #000;
+		text-decoration: none;
+		justify-content: center;
+	}
+	.contact  a:hover{
+		font-weight: 700;
+	}
+
+	/*service*/
+	.footer{
+		margin-top: 0;
+		background-color: transparent;
+	}
+}
