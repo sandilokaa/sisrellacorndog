@@ -864,8 +864,8 @@ a.btn_how:hover{
 		flex-direction: row;
 		align-items: stretch;
 		overflow: hidden;
-		min-width: 300px;
-		max-width: 320px;
+		min-width: 320px;
+		max-width: 340px;
 		width: calc(100% - 100px);
 		height: 300px;
 		width: 200px;
