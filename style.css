@@ -93,8 +93,6 @@ nav.sticky{
 }
 
 a.btn{
-	top: 0;
-	left: 0;
 	padding: 12px 30px;
 	text-decoration: none;
 	color: #000;
@@ -102,7 +100,6 @@ a.btn{
 	border-radius: 30px;
 	transition: 0.3s linear;
 	cursor: pointer;
-	position: relative;
 	font-weight: 600;
 }
 a.btn:hover{
@@ -116,7 +113,6 @@ a.btn:hover{
 /* Buat Service */
 
 .service{
-	width: 80%;
 	height: 400px;
 	margin: auto;
 }
@@ -570,22 +566,38 @@ a.btn_how:hover{
 /* End of Footer */
 
 /* `sm` applies to small devices (potrait phones) */
-@media (max-width: 575.98px) {
+@media only screen and (max-width: 336px) {
+
+	*{
+		box-sizing: border-box;
+	}
 
 	/*home*/
 	.home{
-		margin-top: 20%;
+		top: 0;
+		left: 0;
+	}
+	.kepsen .nikmati{
+		font-size: 12px;
+		text-align: center;
 	}
 	.kepsen .ready{
-		margin-top: 5%;
-		font-size: 35px;
+		margin-top: 30%;
+		font-size: 30px;
+		text-align: center;
 	}
+
+	.home a.btn{
+		position: absolute;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%,85%);
+	}
+
 	.img img{
-		width: 470px;
-		height: 470px;
-		position: relative;
-		align-items: center;
-		margin-left: -17px;
+		margin-top: 15%;
+		width: 310px;
+		height: 310px;
 	}
 
 	/*service*/
@@ -593,24 +605,81 @@ a.btn_how:hover{
 		display: block;
 	}
 
+	.service .h_service{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.service_col h3{
+		font-size: 18px;
+	}
+
+	.service_col p{
+		font-size: 12px;
+	}
+
 	/*take away*/
 	.best{
-		margin-top: 130%;
+		margin-top: 110%;
 	}
 	.img_col img{
-		width: 430px;
-		height: 430px;
-		position: relative;
-		margin-left: 0;
+		margin-top: 100%;
+		width: 300px;
+		height: 300px;
+		margin-left: 1%;
+	}
+
+	.best_col .take_away{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.best_col .simple{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.best_col .gunakan{
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.best_col a.btn_grab{
+		display: flex;
+		text-align: center;
+	}
+
+	.best_col a.btn_shopee{
+		display: flex;
+		margin-top: 20px;
 	}
 
 	/*tips*/
 	.how{
-		margin-top: 75%;
+		margin-top: 180%;
+	}
+
+	.how_col .work{
+		font-size: 30px;
+		text-align: center;
 	}
 
 	.how_col .tips{
-		font-size: 35px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.how_col .tips_2{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.how_col a.btn_how{
+		display: flex;
+	}
+
+	.how_col a{
+		text-align: center;
 	}
 
 	.options{
@@ -618,8 +687,8 @@ a.btn_how:hover{
 		flex-direction: row;
 		align-items: stretch;
 		overflow: hidden;
-		min-width: 440px;
-		max-width: 460px;
+		min-width: 300px;
+		max-width: 320px;
 		width: calc(100% - 100px);
 		height: 300px;
 		width: 200px;
@@ -634,7 +703,7 @@ a.btn_how:hover{
 
 	/*contact*/
 	.contact{
-		margin-top: 80%;
+		margin-top: 95%;
 		padding: 30px;
 		text-align: center;
 	}
@@ -642,19 +711,22 @@ a.btn_how:hover{
 	.contact .about,
 	.contact .simple_link,
 	.contact .ctc{
+		font-size: 24px;
 		font-weight: 600;
 		color: #FCD448;
 	}
 
-	.contact.about_col,
-	.contact .simple_link_col,
-	.contact .ctc_col{
-		padding: 0;
+	.contact .about_col p,
+	.contact .simple_link_col p,
+	.contact .ctc_col p
+	{
+		font-size: 12px;
 	}
 
 	.contact  a{
 		color: #000;
 		text-decoration: none;
+		justify-content: center;
 	}
 	.contact  a:hover{
 		font-weight: 700;
@@ -663,5 +735,10 @@ a.btn_how:hover{
 	/*service*/
 	.footer{
 		margin-top: 0;
+		background-color: transparent;
+	}
+
+	.footer p{
+		font-size: 12px
 	}
 }
