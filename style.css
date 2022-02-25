@@ -940,7 +940,6 @@ a.btn_how:hover{
 
 	.img img{
 		margin-top: 5%;
-		margin-left: 10%;
 		width: 430px;
 		height: 430px;
 	}
@@ -968,9 +967,9 @@ a.btn_how:hover{
 		margin-top: 110%;
 	}
 	.img_col img{
-		width: 430px;
-		height: 450px;
-		margin-left: 8%;
+		margin-top: 30%;
+		width: 400px;
+		height: 420px;
 	}
 
 	.best_col .take_away{
@@ -1002,6 +1001,7 @@ a.btn_how:hover{
 	}
 
 	.how_col .work{
+		margin-top: 60%;
 		font-size: 30px;
 	}
 
@@ -1027,11 +1027,11 @@ a.btn_how:hover{
 		flex-direction: row;
 		align-items: stretch;
 		overflow: hidden;
-		min-width: 510px;
-		max-width: 530px;
+		min-width: 410px;
+		max-width: 430px;
 		width: calc(100% - 100px);
-		height: 400px;
-		width: 400px;
+		height: 300px;
+		width: 200px;
 		margin-top: 10%;
 	}
 	.info .main{
@@ -1043,7 +1043,7 @@ a.btn_how:hover{
 
 	/*contact*/
 	.contact{
-		margin-top: 60%;
+		margin-top: 120%;
 		padding: 30px;
 		text-align: center;
 	}
