@@ -620,7 +620,7 @@ a.btn_how:hover{
 
 	/*take away*/
 	.best{
-		margin-top: 110%;
+		margin-top: 75%;
 	}
 	.img_col img{
 		margin-top: 100%;
@@ -704,6 +704,183 @@ a.btn_how:hover{
 	/*contact*/
 	.contact{
 		margin-top: 95%;
+		padding: 30px;
+		text-align: center;
+	}
+
+	.contact .about,
+	.contact .simple_link,
+	.contact .ctc{
+		font-size: 24px;
+		font-weight: 600;
+		color: #FCD448;
+	}
+
+	.contact .about_col p,
+	.contact .simple_link_col p,
+	.contact .ctc_col p
+	{
+		font-size: 12px;
+	}
+
+	.contact  a{
+		color: #000;
+		text-decoration: none;
+		justify-content: center;
+	}
+	.contact  a:hover{
+		font-weight: 700;
+	}
+
+	/*service*/
+	.footer{
+		margin-top: 0;
+		background-color: transparent;
+	}
+
+	.footer p{
+		font-size: 12px
+	}
+}
+
+@media only screen and (max-width: 354px){
+	
+	*{
+		box-sizing: border-box;
+	}
+
+	/*home*/
+	.home{
+		top: 0;
+		left: 0;
+	}
+	.kepsen .nikmati{
+		font-size: 12px;
+		text-align: center;
+	}
+	.kepsen .ready{
+		margin-top: 30%;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.home a.btn{
+		position: absolute;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%,85%);
+	}
+
+	.img img{
+		margin-top: 15%;
+		width: 310px;
+		height: 310px;
+	}
+
+	/*service*/
+	.service{
+		display: block;
+	}
+
+	.service .h_service{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.service_col h3{
+		font-size: 18px;
+	}
+
+	.service_col p{
+		font-size: 12px;
+	}
+
+	/*take away*/
+	.best{
+		margin-top: 70%;
+	}
+	.img_col img{
+		margin-top: 100%;
+		width: 300px;
+		height: 300px;
+		margin-left: 3%;
+	}
+
+	.best_col .take_away{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.best_col .simple{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.best_col .gunakan{
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.best_col a.btn_grab{
+		display: flex;
+		text-align: center;
+	}
+
+	.best_col a.btn_shopee{
+		display: flex;
+		margin-top: 20px;
+	}
+
+	/*tips*/
+	.how{
+		margin-top: 160%;
+	}
+
+	.how_col .work{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.how_col .tips{
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.how_col .tips_2{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.how_col a.btn_how{
+		display: flex;
+	}
+
+	.how_col a{
+		text-align: center;
+	}
+
+	.options{
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		overflow: hidden;
+		min-width: 300px;
+		max-width: 320px;
+		width: calc(100% - 100px);
+		height: 300px;
+		width: 200px;
+		margin-top: 10%;
+	}
+	.info .main{
+		font-size: 15px;
+	}
+	.info .sub{
+		font-size: 12px;
+	}
+
+	/*contact*/
+	.contact{
+		margin-top: 85%;
 		padding: 30px;
 		text-align: center;
 	}
